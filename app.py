@@ -42,7 +42,7 @@ def handle_message(event):
     msg = event.message.text
     r = 'Sorry I do not know what you mean'
 
-    if msg in ['hi','Hi']
+    if msg in ['hi','Hi']:
         r = 'hi'
     elif msg == 'Have you had dinner?'
         r = 'Not yet.'
