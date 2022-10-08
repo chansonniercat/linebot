@@ -39,9 +39,21 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    msg = event.message.text
+    r = 'Sorry I do not know what you mean'
+
+    if msg in ['hi','Hi']
+        r = 'hi'
+    elif msg == 'Have you had dinner?'
+        r = 'Not yet.'
+    elif msg = 'Who are you?'
+        r = 'I am bot.'
+    elif 'love' in msg:
+        r = 'i love you'
+
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text))
+        TextSendMessage(text=r))
 
 
 if __name__ == "__main__":
