@@ -44,9 +44,9 @@ def handle_message(event):
 
     if msg in ['hi','Hi']:
         r = 'hi'
-    elif msg == 'Have you had dinner?'
+    elif msg == 'Have you had dinner?':
         r = 'Not yet.'
-    elif msg = 'Who are you?'
+    elif msg = 'Who are you?':
         r = 'I am bot.'
     elif 'love' in msg:
         r = 'i love you'
